@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V74-Pl-PEo">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Namir View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="Namir_ViewController" customModule="Day_Practice_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="OCI-pr-ThR">
+                                <rect key="frame" x="50" y="312.66666666666669" width="293" height="226.66666666666669"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wev-Nl-5U2">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQA-WT-RpB">
+                                        <rect key="frame" x="0.0" y="103" width="293" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxg-Wc-csk">
+                                        <rect key="frame" x="109" y="192.33333333333331" width="75" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                        <connections>
+                                            <action selector="textFieldAction:" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="oYV-j5-XfK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rQA-WT-RpB" firstAttribute="leading" secondItem="OCI-pr-ThR" secondAttribute="leading" id="5ni-xf-QDG"/>
+                                    <constraint firstAttribute="trailing" secondItem="rQA-WT-RpB" secondAttribute="trailing" id="DL3-JI-Ve8"/>
+                                    <constraint firstItem="wev-Nl-5U2" firstAttribute="leading" secondItem="OCI-pr-ThR" secondAttribute="leading" id="fth-d9-C7k"/>
+                                    <constraint firstAttribute="trailing" secondItem="wev-Nl-5U2" secondAttribute="trailing" id="gGe-7G-jx3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OCI-pr-ThR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DHj-Ry-ndB"/>
+                            <constraint firstItem="OCI-pr-ThR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="KlU-BN-dgd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OCI-pr-ThR" secondAttribute="trailing" constant="50" id="TD4-nO-Vfl"/>
+                            <constraint firstItem="OCI-pr-ThR" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="mbN-9Z-WR2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SWO-Bi-hgg"/>
+                    <connections>
+                        <outlet property="changeButton" destination="Mxg-Wc-csk" id="YdZ-sF-YBZ"/>
+                        <outlet property="textField" destination="wev-Nl-5U2" id="qRi-DY-SmQ"/>
+                        <outlet property="titleLabel" destination="rQA-WT-RpB" id="v4f-Jf-gls"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="131"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="J5k-di-VrP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V74-Pl-PEo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="apple.homekit" catalog="system" id="ea7-y5-pt3"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bcd-Ve-ccv">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="by3-ME-bSf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSq-AN-HCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple.homekit" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
